@@ -1,7 +1,7 @@
 ## The first function will cache the matrix by assigning the different variables to a list
 ## that can be pulled from by cacheSolve
 
-## Stores the matrix and assigns values to list items.
+## Stores the matrix and assigns values in a list to be used a cache.
 
 makeCacheMatrix <- function(x = matrix()) {
     inv <- NULL
@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 
-## Pulls items from a list and solves to get the inverse of the stored matrix
+## If cache matrix is null it calculates inverse otherwise it returns cache version
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinv()
